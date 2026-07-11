@@ -1,19 +1,22 @@
+<!-- this website is 100% human made, the only Ai used was to learn new stuff to then put here, also why are you reading this? go back to the page-->
 <!DOCTYPE html>
 <html>
     <head>
         <title> Welcome </title>
         <style>
-            .rah {
-               width: 20%;
-        }
+.rah {
+    width: 20%;
+}
           
-            .container {
-                background-color: #000000;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-        }
-        body {
+.container {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ngl this work cuz yes, i have no idea how i got it working and i aint touching it again*/
+body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to  right, #00f7ff 20%,rgb(255, 56, 212));
@@ -22,17 +25,41 @@
 
 }
 
-table {
+/* to modify the cool menu aspect, could use some more work*/
+.menu_selection {
     width: 100%;
      background: linear-gradient(to  right, #00bac0 20%,rgb(197, 43, 164));
 }
 
+/* to modify the link thingy apperance*/
 a {
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
- .rah2 {
+ .Left_textbox {
+position: relative;
+color: white;
+filter: drop-shadow(0px 0px 10px #000000);
+backdrop-filter: blur(20px);
+backdrop-filter: brightness(0.5);
+border-radius: 30px;
+padding: 20px;
+width: 60%;
+left: 2%;
+border-color: #000000;
+border-width: 2px;
+border-style: solid;
+} 
+
+.Left_textbox:hover { 
+    transition: background-color 0.3s ;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: scale 0.3s ;
+    scale: 1.05;
+   
+}
+.Right_textbox {
     position: relative;
 color: white;
 filter: drop-shadow(0px 0px 10px #000000);
@@ -40,43 +67,31 @@ backdrop-filter: blur(20px);
 backdrop-filter: brightness(0.5);
 border-radius: 30px;
 padding: 20px;
-margin-top: 3%;
-width: 40%;
-left: 5%;
+width: 60%;
+right: 2%;
 border-color: #000000;
 border-width: 2px;
 border-style: solid;
 } 
 
-.rah3 {
-    position: relative;
-color: white;
-filter: drop-shadow(0px 0px 10px #000000);
-backdrop-filter: blur(20px);
-backdrop-filter: brightness(0.5);
-border-radius: 30px;
-padding: 20px;
-margin-top: 3%;
-width: 40%;
-left: 50%;
-border-color: #000000;
-border-width: 2px;
-border-style: solid;
-} 
-
-
+.Right_textbox:hover {
+     transition: background-color 0.3s ;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: scale 0.3s ;
+    scale: 1.05;
+}
 
 
     </style>
-        
     </head>
+
     <body>
         <header>
             <div class="container">
                 <img src="https://www.mrw.it/wp-content/uploads/2020/12/0iwkf4_1609360688.jpg" class="rah">
             </div>
-            <div class="menu">
-              <table>
+            <div >
+              <table class="menu_selection">
                 <tr>
                     <th><a href="index.html">Homepage</a></th>
                     <th><a href="season 1.html">Season 1</a></th>
@@ -85,24 +100,40 @@ border-style: solid;
                 </tr>
               </table>
             </header>
-        
-            <div class="rah2">
-                <h1>what is DIB?</h1>
 
-                <p>bla bla bla </p>
-            </div>
+            <!-- the main part of the body start here-->
+            <table width="100%" cellspacing="20px">
+                <tr>
+                    <th class="Left_textbox"> 
+                        <h1> What is DIB? </h1>
+                        <br><p> good question idk</p>
+                    </th>
+                    <th> <img src="https://www.mrw.it/wp-content/uploads/2020/12/0iwkf4_1609360688.jpg" class="rah"> </th>
+                </tr>
+            </table>
 
-            <div class="rah3">
-                <h1>who created DIB?</h1>
+            <table width="100%" cellspacing="20px">
+                <tr >
+                    <th><div class="circle">
+                        <img src="https://www.mrw.it/wp-content/uploads/2020/12/0iwkf4_1609360688.jpg" class="rah"> <br>
+                        <a href="link_discordserver" style="color: rgb(51, 51, 51);"> Here the discord server</a>
+                    </div></th>
+                    <th class="Right_textbox">
+                        <h1> where to find us? </h1>
+                        <br><p> idk man but f you </p>
+                    </th>
+                </tr>
+            </table>
 
-                <p>bla bla bla </p>
-            </div>
-
-            <div class="rah2">
-                <h1>where to find us</h1>
-
-                <p>bla bla bla </p>
-            </div>
+            <table width="100%" cellspacing="20px">
+                <tr>
+                    <th class="Left_textbox"> 
+                        <h1> who made DIB </h1>
+                        <br><p> a goober called spectrum </p>
+                    </th>
+                    <th> <img src="https://www.mrw.it/wp-content/uploads/2020/12/0iwkf4_1609360688.jpg" class="rah"> </th>
+                </tr>
+            </table>
 
     </body>  
 </html>
